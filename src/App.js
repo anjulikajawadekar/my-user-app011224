@@ -7,7 +7,7 @@ import UserInfo from './pages/UserInfo';
 function App() {
   return (
     <Router>
-      <Routes>
+      <Routes basename={process.env.PUBLIC_URL}>
         <Route path="/" element={<UserList/>} />
         <Route path="/user_info/:id" element={<UserInfo/>} />
       </Routes>
